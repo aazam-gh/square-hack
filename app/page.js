@@ -1,6 +1,7 @@
 import Hero from "./components/Hero"
 import Nav from "./components/Nav"
 import Snacks from "./components/Snacks"
+import AI from "./components/AI"
 
 export default function Page() {
 
@@ -9,6 +10,7 @@ export default function Page() {
     <Nav />
     <Hero />
     <Snacks />
+    <AI />
     </>
   )
 }

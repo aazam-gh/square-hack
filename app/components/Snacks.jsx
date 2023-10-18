@@ -1,18 +1,8 @@
-import { Client, Databases } from "appwrite";
 import Image from "next/image";
-
-const client = new Client();
-const databases = new Databases(client);
-
-client
-    .setEndpoint('https://cloud.appwrite.io/v1') // Your API Endpoint
-    .setProject('6496196ac8399fe06737') // Your project ID
-;
+import { snacks } from "../appwrite"
 
 
 export default async function Snacks(){
-    const snacks = await databases.listDocuments('652c94392548cbc325c6', '652c947007db32e2adce');
-    
 
     return (
         <div className="flex justify-center items-center">
